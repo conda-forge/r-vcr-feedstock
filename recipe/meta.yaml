@@ -1,4 +1,4 @@
-{% set version = '1.6.0' %}
+{% set version = "1.7.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/vcr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/vcr/vcr_{{ version }}.tar.gz
-  sha256: aeebae06287a7c869590c1ffc88c2054cc16c77e63c1827d873a0b6f66bae64a
+  sha256: 678a800c76c286f5a1ff7b7845550c152547035b64b300dd68ef48fa1c27ff6a
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -59,12 +59,8 @@ about:
   dev_url: https://github.com/ropensci/vcr/
   doc_url: https://docs.ropensci.org/vcr/
   license: MIT
-  summary: Record test suite 'HTTP' requests and replays them during future runs. A port of the
-    Ruby gem of the same name (<https://github.com/vcr/vcr/>). Works by hooking into
-    the 'webmockr' R package for matching 'HTTP' requests by various rules ('HTTP' method,
-    'URL', query parameters, headers, body, etc.), and then caching real 'HTTP' responses
-    on disk in 'cassettes'. Subsequent 'HTTP' requests matching any previous requests
-    in the same 'cassette' use a cached 'HTTP' response.
+  summary: Record test suite 'HTTP' requests and replays them during future runs. A port of the Ruby gem of the same name (<https://github.com/vcr/vcr/>). Works by hooking into the 'webmockr' R package for matching 'HTTP' requests by various rules ('HTTP' method, 'URL', query parameters, headers, body, etc.), and then caching
+    real 'HTTP' responses on disk in 'cassettes'. Subsequent 'HTTP' requests matching any previous requests in the same 'cassette' use a cached 'HTTP' response.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
