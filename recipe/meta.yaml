@@ -29,24 +29,24 @@ requirements:
   host:
     - r-base
     - r-r6
-    - r-base64enc
-    - r-crul >=0.8.4
-    - r-httr
-    - r-httr2
+    - r-cli
+    - r-curl >=6.3.0
+    - r-jsonlite
+    - r-lifecycle
+    - r-rlang >=1.1.0
     - r-rprojroot
-    - r-urltools
-    - r-webmockr >=0.8.0
+    - r-waldo
     - r-yaml
   run:
     - r-base
     - r-r6
-    - r-base64enc
-    - r-crul >=0.8.4
-    - r-httr
-    - r-httr2
+    - r-cli
+    - r-curl >=6.3.0
+    - r-jsonlite
+    - r-lifecycle
+    - r-rlang >=1.1.0
     - r-rprojroot
-    - r-urltools
-    - r-webmockr >=0.8.0
+    - r-waldo
     - r-yaml
 
 test:
