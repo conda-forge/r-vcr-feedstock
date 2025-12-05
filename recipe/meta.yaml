@@ -1,4 +1,4 @@
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/vcr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/vcr/vcr_{{ version }}.tar.gz
-  sha256: 3847ea10db9b474a267e579512fef1d3d011eb5c88762fd7ceeba89f9cbc820d
+  sha256: 4f87911c3edabd20b85f5737c83bbfa3b1ae7b16a6d9439b0617389cb9338fe4
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
